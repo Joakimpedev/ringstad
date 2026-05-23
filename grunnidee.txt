@@ -1,0 +1,15 @@
+Ideen er å lage en lokal app for Brødrene Ringstad i Rakkestad som gjør det enkelt for folk å bestille kjøtt og matvarer rett fra butikken og få det levert hjem. Appen skal ikke føles som en stor og upersonlig tjeneste, men mer som en forlengelse av den lokale butikken, hvor folk allerede kjenner kvaliteten og stoler på produktene.
+
+I appen kan brukerne bla gjennom alle varene som selges i butikken, som kjøttdeig, biff, koteletter og pølser, med bilder, priser og enkle beskrivelser. De kan legge varer i en handlekurv og sende inn en bestilling med navn, adresse og telefonnummer. Derfra kan bestillingen enten hentes i butikken eller leveres hjem av oss, noe som gjør det ekstra praktisk for folk i området.
+
+Et viktig poeng er at appen skal være enkel å bruke, spesielt for vanlige folk som bare vil få middagen i hus uten stress. Det skal være raskt å finne det man trenger og bestille på få trykk.
+
+Etter hvert kan appen utvides med tilbud og rabattkoder, slik at kundene får gode grunner til å komme tilbake. For eksempel kan det være helgetilbud, grillpakker eller en rabattkode for førstegangsbestilling. Dette gjør at appen ikke bare brukes én gang, men blir en del av hverdagen.
+
+En annen idé er å gjøre appen mer personlig ved å inkludere en slags “Ringstad-bot” som kan hjelpe folk med mattips og enkle oppskrifter. Den kan svare på spørsmål som hvordan man steker biff, hva som passer til ulike typer kjøtt, eller hva man kan lage til middag for familien. På den måten selger man ikke bare varer, men også inspirasjon og hjelp, noe som kan gjøre opplevelsen bedre for brukerne.
+
+Senere kan man også legge inn oppskrifter direkte i appen, hvor brukeren kan trykke på en oppskrift og legge alle ingrediensene rett i handlekurven. Dette gjør det enda enklere å planlegge middager.
+
+Hele konseptet handler egentlig om å kombinere det folk allerede liker med Brødrene Ringstad, nemlig kvalitet og lokal tilhørighet, med noe som gjør hverdagen enklere. En enkel løsning for bestilling og levering, kombinert med tilbud, inspirasjon og personlig preg, kan gjøre appen både nyttig og attraktiv for folk i Rakkestad.
+
+Jeg vil også være klar over at hjemmelevering og alt det der det kan være litt vanskelig å fortelle dem fordi det må da integre les litt mer men jeg tenker hovedtingen som er sånn kjempeenkle ting det er å starte med promoer og vi ser at de har en slags neppe dykk påske på nettet så vi kan få satt opp en slags lignende ting på appen også når logg inn og sånn men vi snakker promotor vi snakker rabatter og masse forskjellige sånne ting det er det vi hovedsakelig snakker om men siden dem har en neppe ting så skal det også være mulig tenker jeg
