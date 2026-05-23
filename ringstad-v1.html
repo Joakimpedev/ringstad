@@ -303,6 +303,190 @@
   .bot-sub { font-size: 12px; color: var(--ink-soft); line-height: 1.4; }
   .bot-arrow { color: var(--accent); }
 
+  /* === Profile mini (header right) === */
+  .profile-mini {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: var(--ink); color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Anton', sans-serif; font-size: 14px;
+    cursor: pointer; border: none;
+  }
+  .profile-mini:active { transform: scale(0.92); }
+
+  /* === Floating cart bar === */
+  .cart-floating {
+    position: absolute; left: 12px; right: 12px;
+    bottom: 78px; z-index: 25;
+    background: var(--ink); color: white;
+    border-radius: 16px; padding: 12px 16px;
+    display: flex; align-items: center; gap: 12px;
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    transform: translateY(120%); transition: transform 0.3s cubic-bezier(.4,1.4,.6,1);
+  }
+  .cart-floating.show { transform: translateY(0); }
+  .cart-floating:active { transform: translateY(0) scale(0.99); }
+  .cart-floating-icon {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--accent); display: flex; align-items: center; justify-content: center;
+    position: relative; flex-shrink: 0;
+  }
+  .cart-floating-icon svg { width: 18px; height: 18px; }
+  .cart-floating-count {
+    position: absolute; top: -4px; right: -4px;
+    background: white; color: var(--ink);
+    font-size: 10px; font-weight: 700;
+    min-width: 18px; height: 18px;
+    border-radius: 9px; display: flex; align-items: center; justify-content: center;
+  }
+  .cart-floating-text { flex: 1; }
+  .cart-floating-label {
+    font-size: 11px; opacity: 0.7; letter-spacing: 0.06em; text-transform: uppercase;
+  }
+  .cart-floating-total {
+    font-family: 'Anton', sans-serif; font-size: 18px; letter-spacing: 0.02em;
+  }
+  .cart-floating svg.chev { width: 18px; height: 18px; opacity: 0.6; }
+
+  /* === Catering === */
+  .cat-hero {
+    height: 240px; background: #f4efe6 center/cover no-repeat;
+    position: relative; margin: -8px 0 0;
+  }
+  .cat-hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%);
+  }
+  .cat-hero-content {
+    position: absolute; bottom: 24px; left: 22px; right: 22px;
+    color: white;
+  }
+  .cat-hero-eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+  }
+  .cat-hero-title {
+    font-family: 'Anton', sans-serif; font-size: 32px;
+    line-height: 1; letter-spacing: 0.01em; text-transform: uppercase;
+  }
+  .cat-intro {
+    padding: 22px 22px 18px;
+    background: var(--bg); border-radius: 24px 24px 0 0;
+    margin-top: -24px; position: relative;
+  }
+  .cat-intro p {
+    font-size: 13px; line-height: 1.55; color: var(--ink-soft); margin-bottom: 10px;
+  }
+  .cat-intro strong { color: var(--ink); font-weight: 600; }
+
+  .tab-row {
+    display: flex; gap: 6px; padding: 4px 20px 16px;
+    background: var(--bg);
+  }
+  .tab-btn {
+    flex: 1; padding: 12px 8px;
+    background: #fff; border: 1px solid var(--line);
+    border-radius: 12px; font-family: inherit;
+    font-size: 12px; font-weight: 600; color: var(--ink-soft);
+    cursor: pointer; letter-spacing: 0.02em;
+  }
+  .tab-btn.active { background: var(--ink); border-color: var(--ink); color: white; }
+  .tab-btn:active { transform: scale(0.97); }
+
+  .menu-tile-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+    padding: 0 20px;
+  }
+  .menu-tile {
+    border-radius: 14px; overflow: hidden; position: relative;
+    cursor: pointer; aspect-ratio: 1;
+    background: #f4efe6 center/cover no-repeat;
+  }
+  .menu-tile:active { transform: scale(0.98); }
+  .menu-tile-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.8) 100%);
+    display: flex; align-items: flex-end; padding: 12px;
+  }
+  .menu-tile-name {
+    color: white; font-family: 'Anton', sans-serif;
+    font-size: 16px; letter-spacing: 0.02em; text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .info-card {
+    margin: 18px 20px 0;
+    background: #fff; border: 1px solid var(--line);
+    border-radius: 16px; padding: 16px;
+  }
+  .info-card-title {
+    font-family: 'Anton', sans-serif; font-size: 14px;
+    text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;
+    color: var(--ink);
+  }
+  .info-row {
+    display: flex; gap: 10px; padding: 8px 0;
+    font-size: 12px; line-height: 1.45; color: var(--ink-soft);
+    border-bottom: 1px solid var(--line);
+  }
+  .info-row:last-child { border-bottom: none; }
+  .info-row-label {
+    width: 100px; flex-shrink: 0;
+    color: var(--ink-muted); font-weight: 600;
+    font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .info-row-val { flex: 1; color: var(--ink); }
+
+  .big-cta {
+    margin: 18px 20px;
+    background: var(--accent); color: white; border: none;
+    padding: 16px; width: calc(100% - 40px); border-radius: 100px;
+    font-family: inherit; font-size: 14px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    box-shadow: 0 6px 16px rgba(232,119,34,0.35);
+  }
+  .big-cta:active { transform: scale(0.98); }
+  .big-cta.secondary {
+    background: var(--ink); box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+
+  .contact-grid {
+    margin: 12px 20px 0;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+  }
+  .contact-card {
+    background: #fff; border: 1px solid var(--line);
+    border-radius: 14px; padding: 14px;
+    text-align: center; cursor: pointer;
+  }
+  .contact-card:active { transform: scale(0.97); }
+  .contact-icon {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: #FFF1E3; color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 8px;
+  }
+  .contact-label { font-size: 11px; color: var(--ink-muted); margin-bottom: 2px; }
+  .contact-val { font-size: 13px; font-weight: 600; color: var(--ink); }
+
+  .grill-feature {
+    margin: 0 20px 14px;
+    background: #fff; border: 1px solid var(--line);
+    border-radius: 16px; overflow: hidden;
+  }
+  .grill-feature-img {
+    width: 100%; height: 160px; background: #f4efe6 center/cover no-repeat;
+  }
+  .grill-feature-body { padding: 14px 16px 16px; }
+  .grill-feature-title {
+    font-family: 'Anton', sans-serif; font-size: 18px;
+    text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 6px;
+  }
+  .grill-feature-text {
+    font-size: 12px; line-height: 1.5; color: var(--ink-soft);
+  }
+
   /* === Bottom nav === */
   .bottom-nav {
     position: absolute; bottom: 0; left: 0; right: 0;
@@ -745,10 +929,7 @@
               <button class="icon-btn" onclick="goTo('offers')" aria-label="Tilbud">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
               </button>
-              <button class="icon-btn" onclick="goTo('cart')" aria-label="Handlekurv">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                <span class="badge empty" id="headerBadge">0</span>
-              </button>
+              <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side">JP</button>
             </div>
           </div>
         </div>
@@ -819,10 +1000,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title" id="categoryTitle">Storfe</div>
-          <button class="icon-btn" onclick="goTo('cart')">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-            <span class="badge empty" id="catHeaderBadge">0</span>
-          </button>
+          <button class="profile-mini" onclick="goTo('profile')">JP</button>
         </div>
         <div class="filter-row" id="filterRow"></div>
         <div class="section">
@@ -880,7 +1058,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title">Handlekurv</div>
-          <div style="width: 38px;"></div>
+          <button class="profile-mini" onclick="goTo('profile')">JP</button>
         </div>
         <div id="cartContent"></div>
       </div>
@@ -892,7 +1070,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title">Betaling</div>
-          <div style="width: 38px;"></div>
+          <button class="profile-mini" onclick="goTo('profile')">JP</button>
         </div>
 
         <div class="ck-section">
@@ -962,7 +1140,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title">Søk</div>
-          <div style="width: 38px;"></div>
+          <button class="profile-mini" onclick="goTo('profile')">JP</button>
         </div>
         <div class="search-input-wrap">
           <input class="search-input" id="searchInput" placeholder="Søk etter produkt…" oninput="runSearch(this.value)" autofocus>
@@ -988,7 +1166,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title">Tilbud</div>
-          <div style="width: 38px;"></div>
+          <button class="profile-mini" onclick="goTo('profile')">JP</button>
         </div>
 
         <div class="promo-banner" style="margin: 0 20px 20px;">
@@ -1008,7 +1186,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title">Ringstad-bot</div>
-          <div style="width: 38px;"></div>
+          <button class="profile-mini" onclick="goTo('profile')">JP</button>
         </div>
         <div class="chat-list" id="chatList">
           <div class="chat-msg bot">Hei Joakim! 👋 Jeg er Ringstad-boten. Jeg kan hjelpe med oppskrifter, steketid og hva som passer til kjøttet. Hva lurer du på?</div>
@@ -1024,9 +1202,9 @@
       <!-- ===== PROFILE ===== -->
       <div class="screen" id="screen-profile">
         <div class="sub-head">
-          <div style="width: 38px;"></div>
+          <button class="profile-mini" onclick="goTo('profile')">JP</button>
           <div class="sub-title">Min side</div>
-          <div style="width: 38px;"></div>
+          <button class="profile-mini" onclick="goTo('profile')">JP</button>
         </div>
         <div class="profile-head">
           <div class="profile-avatar">JP</div>
@@ -1085,9 +1263,206 @@
         </div>
       </div>
 
+      <!-- ===== CATERING ===== -->
+      <div class="screen" id="screen-catering">
+        <div class="cat-hero" style="background-image:url('assets/catering/anne-grethe.jpg');">
+          <div class="cat-hero-overlay"></div>
+          <div class="pd-floating">
+            <button class="back-btn" onclick="goTo('home')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </button>
+            <button class="profile-mini" onclick="goTo('profile')">JP</button>
+          </div>
+          <div class="cat-hero-content">
+            <div class="cat-hero-eyebrow">Brødr. Ringstad</div>
+            <div class="cat-hero-title">Catering<br>& Grill</div>
+          </div>
+        </div>
+
+        <div class="cat-intro">
+          <p>Vår kjøkkensjef <strong>Anne-Grethe</strong> og hennes kollegaer leverer et bredt og godt utvalg av retter laget med kvalitetsråvarer fra egen produksjon.</p>
+          <p>Vi leverer til <strong>dåp, konfirmasjon, bryllup, jubileer, arrangementer og minnestunder</strong> — alt skreddersydd til ditt selskap.</p>
+        </div>
+
+        <div class="tab-row">
+          <button class="tab-btn active" data-tab="ordinar" onclick="switchCateringTab('ordinar')">Ordinær</button>
+          <button class="tab-btn" data-tab="bedrift" onclick="switchCateringTab('bedrift')">Bedrift</button>
+          <button class="tab-btn" data-tab="grill" onclick="switchCateringTab('grill')">Grill</button>
+        </div>
+
+        <!-- Tab: Ordinær -->
+        <div class="tab-panel" id="tab-ordinar">
+          <div class="menu-tile-grid" id="ordinarGrid"></div>
+
+          <div class="info-card">
+            <div class="info-card-title">Slik fungerer det</div>
+            <div class="info-row">
+              <div class="info-row-label">Henting</div>
+              <div class="info-row-val">Kulturhuset, Rådhusveien 8, Rakkestad</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">Levering</div>
+              <div class="info-row-val">Gratis i Rakkestad ved ordre over 3 000,-<br>Øvrige postnr: 29,-/km (min. 2 000,-)</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">Søndag</div>
+              <div class="info-row-val">300,- tillegg</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">Bestilling</div>
+              <div class="info-row-val">Endringer senest 4 virkedager før</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">Avbestilling</div>
+              <div class="info-row-val">14+ dager: gratis · 7–14 dager: 50% · &lt;7 dager: 100%</div>
+            </div>
+          </div>
+
+          <button class="big-cta" onclick="toast('Åpner forespørselsskjema')">
+            Send forespørsel
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+
+          <div class="contact-grid" style="margin-bottom: 20px;">
+            <div class="contact-card" onclick="toast('Ringer 456 15 708')">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-label">Ring catering</div>
+              <div class="contact-val">456 15 708</div>
+            </div>
+            <div class="contact-card" onclick="toast('Åpner e-post')">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-label">E-post</div>
+              <div class="contact-val">catering@</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Bedrift -->
+        <div class="tab-panel" id="tab-bedrift" style="display:none;">
+          <div style="padding: 0 20px 16px;">
+            <div style="background: #fff; border: 1px solid var(--line); border-radius: 18px; overflow: hidden;">
+              <div style="height: 160px; background: url('assets/catering/bedrift.jpg') center/cover no-repeat;"></div>
+              <div style="padding: 18px;">
+                <div style="font-family:'Anton',sans-serif; font-size:20px; text-transform:uppercase; letter-spacing:0.02em; margin-bottom:8px;">Bedriftsmeny</div>
+                <p style="font-size:13px; line-height:1.55; color:var(--ink-soft);">
+                  Enkel tilgang på <strong>frokost, lunsj, møte- og overtidsmat</strong> for din bedrift. Vi tilrettelegger faste leveranser etter behov — daglig, ukentlig eller ved enkeltarrangementer.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card" style="margin-top: 0;">
+            <div class="info-card-title">Hva vi leverer</div>
+            <div class="info-row">
+              <div class="info-row-label">Frokost</div>
+              <div class="info-row-val">Yoghurt, frukt, gryntebrød, pålegg</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">Lunsj</div>
+              <div class="info-row-val">Snitter, baguetter, varme retter</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">Møtemat</div>
+              <div class="info-row-val">Wraps, finger food, kaker</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">Overtid</div>
+              <div class="info-row-val">Varme middagsretter, gryteretter</div>
+            </div>
+          </div>
+
+          <button class="big-cta" onclick="toast('Bedriftskonto opprettes')">
+            Opprett bedriftskonto
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Tab: Grill -->
+        <div class="tab-panel" id="tab-grill" style="display:none;">
+          <div class="grill-feature">
+            <div class="grill-feature-img" style="background-image:url('assets/grill/helstekt-gris.jpg');"></div>
+            <div class="grill-feature-body">
+              <div class="grill-feature-title">Helstekt gris</div>
+              <div class="grill-feature-text">Nyt en uforglemmelig smaksopplevelse med vår tradisjonelle helstekte gris — tilberedt over åpen flamme for perfekt smak og saftighet. Perfekt for bryllup, jubileer og større events.</div>
+            </div>
+          </div>
+
+          <div class="grill-feature">
+            <div class="grill-feature-img" style="background-image:url('assets/grill/grilltallerken.jpg');"></div>
+            <div class="grill-feature-body">
+              <div class="grill-feature-title">Ferdige grillpakker</div>
+              <div class="grill-feature-text">Du kan selv være grill-sjef og kjøpe ferdige pakker fra oss — entrecote, indrefilet, marinerte sommerkoteletter, spareribs, grillspyd, lammelår og marinert kyllingfilet. Pølser og hamburgere produserer vi selv.</div>
+            </div>
+          </div>
+
+          <div class="grill-feature">
+            <div class="grill-feature-img" style="background-image:url('assets/grill/grill-event.jpg');"></div>
+            <div class="grill-feature-body">
+              <div class="grill-feature-title">Vi tar grill-jobben</div>
+              <div class="grill-feature-text">Eller la oss ta hele jobben. Vi griller på stedet, lager tilbehør (potetsalat, brokkolisalat) og serverer — du fokuserer på gjestene.</div>
+            </div>
+          </div>
+
+          <div class="grill-feature">
+            <div class="grill-feature-img" style="background-image:url('assets/grill/fest.jpg');"></div>
+            <div class="grill-feature-body">
+              <div class="grill-feature-title">Tilbehør</div>
+              <div class="grill-feature-text">Hjemmelagde salater, brød, sauser og dressinger — alt for et vellykket grillmåltid.</div>
+            </div>
+          </div>
+
+          <div class="info-card" style="margin-top: 4px;">
+            <div class="info-card-title">Bestilling</div>
+            <div class="info-row">
+              <div class="info-row-label">Telefon</div>
+              <div class="info-row-val">69 22 19 96</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">Henting</div>
+              <div class="info-row-val">Avtales — ferdig oppvarmet om ønskelig</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">Betaling</div>
+              <div class="info-row-val">Vipps, kort, faktura (bedrift)</div>
+            </div>
+            <div class="info-row">
+              <div class="info-row-label">For hvem</div>
+              <div class="info-row-val">Privat og bedrift</div>
+            </div>
+          </div>
+
+          <button class="big-cta" onclick="toast('Åpner grillforespørsel')">
+            Bestill grillpakke
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </button>
+          <button class="big-cta secondary" style="margin-top: -8px;" onclick="toast('Ringer 69 22 19 96')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Ring 69 22 19 96
+          </button>
+        </div>
+
+        <div style="height: 24px;"></div>
+      </div>
+
     </div>
 
     <div class="toast" id="toast">Lagt i kurv</div>
+
+    <div class="cart-floating" id="cartFloating" onclick="goTo('cart')">
+      <div class="cart-floating-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-floating-count" id="cartFloatingCount">0</span>
+      </div>
+      <div class="cart-floating-text">
+        <div class="cart-floating-label">Se handlekurv</div>
+        <div class="cart-floating-total" id="cartFloatingTotal">0,-</div>
+      </div>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+    </div>
 
     <div class="bottom-nav">
       <button class="nav-item active" data-nav="home" onclick="goTo('home')">
@@ -1098,18 +1473,9 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         <span class="nav-label">Meny</span>
       </button>
-      <button class="nav-item" data-nav="search" onclick="goTo('search')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-        <span class="nav-label">Søk</span>
-      </button>
-      <button class="nav-item" data-nav="cart" onclick="goTo('cart')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        <span class="nav-badge empty" id="navBadge">0</span>
-        <span class="nav-label">Kurv</span>
-      </button>
-      <button class="nav-item" data-nav="profile" onclick="goTo('profile')">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        <span class="nav-label">Min side</span>
+      <button class="nav-item" data-nav="catering" onclick="goTo('catering')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        <span class="nav-label">Catering</span>
       </button>
     </div>
 
@@ -1215,13 +1581,13 @@ function goTo(screen, opts) {
   const target = document.getElementById('screen-' + screen);
   if (target) target.classList.add('active');
 
-  // Update bottom nav
+  // Update bottom nav (Hjem / Meny / Catering only)
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  let navKey = screen;
-  if (screen === 'category') navKey = 'categories';
-  if (screen === 'product')  navKey = null;
-  if (screen === 'checkout' || screen === 'order') navKey = 'cart';
-  if (screen === 'offers' || screen === 'bot') navKey = 'home';
+  let navKey = null;
+  if (screen === 'home') navKey = 'home';
+  else if (screen === 'category' || screen === 'product') navKey = 'categories';
+  else if (screen === 'catering') navKey = 'catering';
+  else if (screen === 'offers' || screen === 'bot' || screen === 'search') navKey = 'home';
   if (navKey) {
     const navBtn = document.querySelector('.nav-item[data-nav="'+navKey+'"]');
     if (navBtn) navBtn.classList.add('active');
@@ -1379,13 +1745,20 @@ function setCartQty(id, qty) {
 }
 
 function updateBadges() {
-  const total = Object.values(cart).reduce((s,v) => s+v, 0);
-  ['headerBadge','navBadge','catHeaderBadge'].forEach(bid => {
-    const b = document.getElementById(bid);
-    if (!b) return;
-    b.textContent = total;
-    b.classList.toggle('empty', total === 0);
-  });
+  const totalQty = Object.values(cart).reduce((s,v) => s+v, 0);
+  const sub = cartSubtotal();
+  const discount = Math.round(sub * 0.20);
+  const total = sub > 0 ? (sub - discount + 49) : 0;
+
+  const fl = document.getElementById('cartFloating');
+  if (fl) {
+    const currentScreen = (document.querySelector('.screen.active') || {}).id || '';
+    const hideOn = ['screen-cart','screen-checkout','screen-order','screen-product'];
+    const visible = totalQty > 0 && !hideOn.includes(currentScreen);
+    fl.classList.toggle('show', visible);
+    document.getElementById('cartFloatingCount').textContent = totalQty;
+    document.getElementById('cartFloatingTotal').textContent = total + ',-';
+  }
 }
 
 function cartSubtotal() {
@@ -1587,19 +1960,58 @@ function toast(msg) {
 }
 
 // =====================================================================
+// CATERING
+// =====================================================================
+const CATERING_MENU = [
+  { id: 'tapas',     name: 'Tapas',         img: 'assets/catering/tapas.jpg' },
+  { id: 'snitter',   name: 'Snitter',       img: 'assets/catering/snitter.jpg' },
+  { id: 'koldtbord', name: 'Koldtbord',     img: 'assets/catering/koldtbord-1.jpg' },
+  { id: 'baguetter', name: 'Baguetter',     img: 'assets/catering/baguette.jpg' },
+  { id: 'middag',    name: 'Middagsretter', img: 'assets/catering/middag.jpg' },
+  { id: 'gryteretter', name: 'Gryteretter', img: 'assets/catering/gryterett.jpg' },
+  { id: 'spekemat',  name: 'Spekemat',      img: 'assets/catering/spekemat.jpg' },
+  { id: 'forretter', name: 'Forretter',     img: 'assets/catering/forretter.jpg' },
+  { id: 'dessert',   name: 'Dessert',       img: 'assets/catering/dessert.jpg' },
+];
+
+function renderCatering() {
+  const grid = document.getElementById('ordinarGrid');
+  if (!grid) return;
+  grid.innerHTML = CATERING_MENU.map(m => `
+    <div class="menu-tile" style="background-image:url('${m.img}');" onclick="toast('${m.name} — åpner detaljer')">
+      <div class="menu-tile-overlay">
+        <div class="menu-tile-name">${m.name}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function switchCateringTab(tab) {
+  document.querySelectorAll('#screen-catering .tab-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.tab === tab);
+  });
+  document.querySelectorAll('#screen-catering .tab-panel').forEach(p => {
+    p.style.display = p.id === 'tab-' + tab ? 'block' : 'none';
+  });
+  document.getElementById('appContent').scrollTop = 0;
+}
+
+// =====================================================================
 // INIT
 // =====================================================================
-// Watch screen changes to refresh cart contents
 const origGoTo = goTo;
 window.goTo = function(screen, opts) {
   origGoTo(screen, opts);
   if (screen === 'cart') renderCart();
   if (screen === 'offers') renderOffers();
+  if (screen === 'catering') renderCatering();
+  updateBadges();
 };
 
 renderTilbud();
 renderPopular();
 renderKjottdeig();
+renderCatering();
 updateBadges();
 </script>
 
