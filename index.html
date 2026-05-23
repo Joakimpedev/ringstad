@@ -9,7 +9,7 @@
 <title>Brødr. Ringstad — App</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
@@ -40,7 +40,7 @@
   }
   .device-wrapper { display: flex; flex-direction: column; align-items: center; gap: 18px; }
   .device-label {
-    font-family: 'Anton', sans-serif; font-size: 13px;
+    font-family: 'Playfair Display', serif; font-size: 13px;
     color: rgba(255,255,255,0.55); letter-spacing: 0.15em; text-transform: uppercase;
   }
 
@@ -120,7 +120,7 @@
     margin-top: auto; margin-bottom: 36px;
   }
   .welcome-title {
-    font-family: 'Anton', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 44px; line-height: 1; letter-spacing: 0.01em;
     text-transform: uppercase; text-shadow: 0 2px 20px rgba(0,0,0,0.5);
   }
@@ -173,7 +173,7 @@
   .greeting { padding: 4px 20px 8px; }
   .hello { font-size: 13px; color: var(--ink-muted); letter-spacing: 0.02em; }
   .hello-name {
-    font-family: 'Anton', sans-serif; font-size: 28px;
+    font-family: 'Playfair Display', serif; font-size: 28px;
     color: var(--ink); letter-spacing: 0.01em; line-height: 1.1; margin-top: 2px;
   }
 
@@ -217,7 +217,7 @@
     align-self: flex-start;
   }
   .promo-title {
-    font-family: 'Anton', sans-serif; font-size: 32px; line-height: 1;
+    font-family: 'Playfair Display', serif; font-size: 32px; line-height: 1;
     letter-spacing: 0.01em; text-transform: uppercase;
     text-shadow: 0 2px 12px rgba(0,0,0,0.4);
   }
@@ -241,7 +241,7 @@
     display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;
   }
   .section-title {
-    font-family: 'Anton', sans-serif; font-size: 20px;
+    font-family: 'Playfair Display', serif; font-size: 20px;
     color: var(--ink); letter-spacing: 0.02em; text-transform: uppercase;
   }
   .section-link {
@@ -302,7 +302,7 @@
   }
   .tilbud-price-row { display: flex; align-items: baseline; gap: 8px; margin-top: 8px; }
   .price-new {
-    font-family: 'Anton', sans-serif; font-size: 20px; color: var(--ink); letter-spacing: 0.01em;
+    font-family: 'Playfair Display', serif; font-size: 20px; color: var(--ink); letter-spacing: 0.01em;
   }
   .price-old { font-size: 12px; color: var(--ink-muted); text-decoration: line-through; }
   .add-btn {
@@ -336,11 +336,12 @@
   .pcard-foot {
     display: flex; align-items: center; justify-content: space-between; margin-top: 8px;
   }
-  .pcard-price { font-family: 'Anton', sans-serif; font-size: 18px; letter-spacing: 0.01em; }
+  .pcard-price { font-family: 'Playfair Display', serif; font-size: 18px; letter-spacing: 0.01em; }
   .pcard-add {
     width: 30px; height: 30px; border-radius: 50%;
-    background: var(--ink); color: white; border: none;
+    background: var(--accent); color: white; border: none;
     display: flex; align-items: center; justify-content: center; cursor: pointer;
+    box-shadow: 0 3px 8px rgba(139,31,35,0.3);
   }
   .pcard-add:active { transform: scale(0.88); }
   .pcard-add svg { width: 14px; height: 14px; }
@@ -358,11 +359,11 @@
     width: 48px; height: 48px; border-radius: 50%;
     background: var(--ink); color: var(--accent);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Anton', sans-serif; font-size: 22px; flex-shrink: 0;
+    font-family: 'Playfair Display', serif; font-size: 22px; flex-shrink: 0;
   }
   .bot-text { flex: 1; }
   .bot-title {
-    font-family: 'Anton', sans-serif; font-size: 16px; letter-spacing: 0.02em;
+    font-family: 'Playfair Display', serif; font-size: 16px; letter-spacing: 0.02em;
     color: var(--ink); margin-bottom: 3px; text-transform: uppercase;
   }
   .bot-sub { font-size: 12px; color: var(--ink-soft); line-height: 1.4; }
@@ -387,7 +388,7 @@
     padding: 16px 18px;
   }
   .recipe-title {
-    font-family: 'Anton', sans-serif; font-size: 22px;
+    font-family: 'Playfair Display', serif; font-size: 22px;
     color: white; text-transform: uppercase; letter-spacing: 0.02em;
     line-height: 1.05;
   }
@@ -399,15 +400,18 @@
   .recipe-meta span { display: flex; align-items: center; gap: 4px; }
   .recipe-meta svg { width: 12px; height: 12px; }
 
-  /* === Profile mini (header right) === */
+  /* === Profile icon (header right) === */
   .profile-mini {
     width: 38px; height: 38px; border-radius: 50%;
-    background: var(--ink); color: var(--accent);
+    background: none; color: var(--ink);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Anton', sans-serif; font-size: 14px;
-    cursor: pointer; border: none;
+    cursor: pointer; border: none; padding: 0;
   }
-  .profile-mini:active { transform: scale(0.92); }
+  .profile-mini svg { width: 22px; height: 22px; }
+  .profile-mini:active { transform: scale(0.92); opacity: 0.7; }
+  /* Dark variant (on dark screens) */
+  .pd-floating .profile-mini { color: white; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); }
+  .cat-hero .profile-mini { color: white; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); }
 
   /* === Floating cart bar === */
   .cart-floating {
@@ -440,7 +444,7 @@
     font-size: 11px; opacity: 0.7; letter-spacing: 0.06em; text-transform: uppercase;
   }
   .cart-floating-total {
-    font-family: 'Anton', sans-serif; font-size: 18px; letter-spacing: 0.02em;
+    font-family: 'Playfair Display', serif; font-size: 18px; letter-spacing: 0.02em;
   }
   .cart-floating svg.chev { width: 18px; height: 18px; opacity: 0.6; }
 
@@ -462,7 +466,7 @@
     text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
   }
   .cat-hero-title {
-    font-family: 'Anton', sans-serif; font-size: 32px;
+    font-family: 'Playfair Display', serif; font-size: 32px;
     line-height: 1; letter-spacing: 0.01em; text-transform: uppercase;
   }
   .cat-intro {
@@ -505,7 +509,7 @@
     display: flex; align-items: flex-end; padding: 12px;
   }
   .menu-tile-name {
-    color: white; font-family: 'Anton', sans-serif;
+    color: white; font-family: 'Playfair Display', serif;
     font-size: 16px; letter-spacing: 0.02em; text-transform: uppercase;
     line-height: 1;
   }
@@ -516,7 +520,7 @@
     border-radius: 16px; padding: 16px;
   }
   .info-card-title {
-    font-family: 'Anton', sans-serif; font-size: 14px;
+    font-family: 'Playfair Display', serif; font-size: 14px;
     text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px;
     color: var(--ink);
   }
@@ -576,7 +580,7 @@
   }
   .grill-feature-body { padding: 14px 16px 16px; }
   .grill-feature-title {
-    font-family: 'Anton', sans-serif; font-size: 18px;
+    font-family: 'Playfair Display', serif; font-size: 18px;
     text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 6px;
   }
   .grill-feature-text {
@@ -623,7 +627,7 @@
   .back-btn:active { transform: scale(0.92); }
   .back-btn svg { width: 18px; height: 18px; }
   .sub-title {
-    font-family: 'Anton', sans-serif; font-size: 20px; letter-spacing: 0.02em;
+    font-family: 'Playfair Display', serif; font-size: 20px; letter-spacing: 0.02em;
     text-transform: uppercase;
   }
 
@@ -678,12 +682,12 @@
     display: flex; justify-content: space-between; align-items: flex-end; gap: 16px;
   }
   .pd-name {
-    font-family: 'Anton', sans-serif; font-size: 32px;
+    font-family: 'Playfair Display', serif; font-size: 32px;
     line-height: 1.05; letter-spacing: 0.01em;
     text-transform: uppercase; color: white;
   }
   .pd-price-block { text-align: right; flex-shrink: 0; }
-  .pd-price { font-family: 'Anton', sans-serif; font-size: 26px; color: white; display: block; }
+  .pd-price { font-family: 'Playfair Display', serif; font-size: 26px; color: white; display: block; }
   .pd-unit { font-size: 11px; color: rgba(255,255,255,0.55); }
   .pd-meta { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 8px; }
   .pd-desc {
@@ -698,9 +702,9 @@
     font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase;
     color: rgba(255,255,255,0.5); margin-bottom: 4px;
   }
-  .pd-fact-val { font-family: 'Anton', sans-serif; font-size: 14px; color: white; letter-spacing: 0.02em; }
+  .pd-fact-val { font-family: 'Playfair Display', serif; font-size: 14px; color: white; letter-spacing: 0.02em; }
   .pd-related-title {
-    font-family: 'Anton', sans-serif; font-size: 16px; color: white;
+    font-family: 'Playfair Display', serif; font-size: 16px; color: white;
     text-transform: uppercase; letter-spacing: 0.02em; margin: 30px 0 12px;
   }
   #screen-product .pcard {
@@ -727,10 +731,11 @@
   #screen-product .pd-qty button:active { background: rgba(255,255,255,0.1); }
 
   .pd-sticky-bar {
-    position: absolute; bottom: 70px; left: 0; right: 0;
-    padding: 14px 20px 14px; background: rgba(13,13,13,0.92);
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 14px 20px max(22px, env(safe-area-inset-bottom));
+    background: rgba(13,13,13,0.96);
     backdrop-filter: blur(20px); border-top: 1px solid rgba(255,255,255,0.08);
-    display: flex; gap: 10px; align-items: center; z-index: 25;
+    display: flex; gap: 10px; align-items: center; z-index: 35;
   }
   .pd-qty {
     display: flex; align-items: center; gap: 4px;
@@ -768,7 +773,7 @@
     font-size: 13px; font-weight: 600; line-height: 1.25; color: var(--ink);
     margin-bottom: 4px;
   }
-  .cart-price { font-family: 'Anton', sans-serif; font-size: 16px; color: var(--ink); }
+  .cart-price { font-family: 'Playfair Display', serif; font-size: 16px; color: var(--ink); }
   .qty-control {
     display: flex; align-items: center; gap: 0;
     background: #fff; border: 1px solid var(--line);
@@ -793,7 +798,7 @@
     margin: 0 auto 18px; color: var(--ink-muted);
   }
   .empty-title {
-    font-family: 'Anton', sans-serif; font-size: 20px;
+    font-family: 'Playfair Display', serif; font-size: 20px;
     text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 8px;
   }
   .empty-sub { font-size: 13px; color: var(--ink-muted); line-height: 1.5; margin-bottom: 20px; }
@@ -839,7 +844,7 @@
   }
   .sum-row.total {
     border-top: 1px solid var(--line); margin-top: 6px; padding-top: 12px;
-    font-family: 'Anton', sans-serif; font-size: 20px; color: var(--ink);
+    font-family: 'Playfair Display', serif; font-size: 20px; color: var(--ink);
     letter-spacing: 0.02em;
   }
   .sum-row.discount { color: var(--green); font-weight: 600; }
@@ -886,9 +891,9 @@
     width: 64px; height: 64px; border-radius: 50%;
     background: var(--ink); color: var(--accent);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Anton', sans-serif; font-size: 26px;
+    font-family: 'Playfair Display', serif; font-size: 26px;
   }
-  .profile-name { font-family: 'Anton', sans-serif; font-size: 22px; }
+  .profile-name { font-family: 'Playfair Display', serif; font-size: 22px; }
   .profile-email { font-size: 12px; color: var(--ink-muted); margin-top: 2px; }
   .menu-list { padding: 0 20px; }
   .menu-row {
@@ -927,7 +932,7 @@
   }
   .offer-name { font-size: 13px; font-weight: 600; line-height: 1.25; }
   .offer-prices { display: flex; gap: 6px; align-items: baseline; margin-top: 4px; }
-  .offer-new { font-family: 'Anton', sans-serif; font-size: 16px; }
+  .offer-new { font-family: 'Playfair Display', serif; font-size: 16px; }
   .offer-old { font-size: 11px; color: var(--ink-muted); text-decoration: line-through; }
 
   /* === Checkout === */
@@ -995,7 +1000,7 @@
   }
   .order-check svg { width: 38px; height: 38px; }
   .order-title {
-    font-family: 'Anton', sans-serif; font-size: 26px;
+    font-family: 'Playfair Display', serif; font-size: 26px;
     text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 10px;
   }
   .order-sub { font-size: 13px; color: var(--ink-soft); line-height: 1.5; margin-bottom: 24px; }
@@ -1017,6 +1022,20 @@
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
   /* On real phones: drop the device frame, go full-screen */
+  /* Playfair Display reads better in title case than uppercase */
+  .welcome-title, .promo-title, .section-title, .recipe-title,
+  .cat-hero-title, .menu-tile-name, .info-card-title, .grill-feature-title,
+  .sub-title, .pd-name, .pd-related-title, .empty-title, .order-title,
+  .hello-name, .pcard-price, .price-new, .price-old, .cart-price,
+  .pd-price, .sum-row.total, .offer-new, .cart-floating-total,
+  .profile-name, .pd-fact-val, .pd-qty span {
+    text-transform: none;
+    font-weight: 500;
+  }
+  .welcome-title, .pd-name, .pd-price, .cat-hero-title, .promo-title, .order-title {
+    font-weight: 600;
+  }
+
   @media (max-width: 500px) {
     body {
       padding: 0; background: var(--bg);
@@ -1075,10 +1094,7 @@
           <div class="header-row">
             <img src="assets/br_navnetrekk_sort-svg.svg" class="logo-img" alt="Brødr. Ringstad">
             <div class="header-icons">
-              <button class="icon-btn" onclick="goTo('offers')" aria-label="Tilbud">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
-              </button>
-              <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side">JP</button>
+              <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
             </div>
           </div>
         </div>
@@ -1115,7 +1131,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title" id="categoryTitle">Storfe</div>
-          <button class="profile-mini" onclick="goTo('profile')">JP</button>
+          <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
         </div>
         <div class="filter-row" id="filterRow"></div>
         <div class="section">
@@ -1177,7 +1193,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title">Handlekurv</div>
-          <button class="profile-mini" onclick="goTo('profile')">JP</button>
+          <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
         </div>
         <div id="cartContent"></div>
       </div>
@@ -1189,7 +1205,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title">Betaling</div>
-          <button class="profile-mini" onclick="goTo('profile')">JP</button>
+          <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
         </div>
 
         <div class="ck-section">
@@ -1259,7 +1275,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title">Søk</div>
-          <button class="profile-mini" onclick="goTo('profile')">JP</button>
+          <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
         </div>
         <div class="search-input-wrap">
           <input class="search-input" id="searchInput" placeholder="Søk etter produkt…" oninput="runSearch(this.value)" autofocus>
@@ -1285,7 +1301,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           </button>
           <div class="sub-title">Tilbud</div>
-          <button class="profile-mini" onclick="goTo('profile')">JP</button>
+          <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
         </div>
 
         <div class="promo-banner" style="margin: 0 20px 20px;">
@@ -1303,7 +1319,7 @@
         <div class="app-header">
           <div class="header-row">
             <div class="sub-title">Oppskrifter</div>
-            <button class="profile-mini" onclick="goTo('profile')">JP</button>
+            <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
           </div>
         </div>
 
@@ -1321,9 +1337,9 @@
       <!-- ===== PROFILE ===== -->
       <div class="screen" id="screen-profile">
         <div class="sub-head">
-          <button class="profile-mini" onclick="goTo('profile')">JP</button>
+          <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
           <div class="sub-title">Min side</div>
-          <button class="profile-mini" onclick="goTo('profile')">JP</button>
+          <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
         </div>
         <div class="profile-head">
           <div class="profile-avatar">JP</div>
@@ -1390,7 +1406,7 @@
             <button class="back-btn" onclick="goTo('home')">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
             </button>
-            <button class="profile-mini" onclick="goTo('profile')">JP</button>
+            <button class="profile-mini" onclick="goTo('profile')" aria-label="Min side"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></button>
           </div>
           <div class="cat-hero-content">
             <div class="cat-hero-eyebrow">Brødr. Ringstad</div>
@@ -1724,9 +1740,10 @@ function goTo(screen, opts) {
   const target = document.getElementById('screen-' + screen);
   if (target) target.classList.add('active');
 
-  // Hide bottom nav + floating cart on welcome
+  // Hide bottom nav on welcome and product detail
   const nav = document.getElementById('bottomNav');
-  if (nav) nav.style.display = (screen === 'welcome') ? 'none' : 'flex';
+  const hideNavOn = ['welcome','product'];
+  if (nav) nav.style.display = hideNavOn.includes(screen) ? 'none' : 'flex';
 
   // Update bottom nav (Hjem / Produkter / Oppskrifter / Catering)
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
