@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#FAF7F2">
+<meta name="theme-color" content="#F5EEE0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <title>Brødr. Ringstad — App</title>
@@ -14,16 +14,16 @@
   * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
   :root {
-    --bg: #FAF7F2;
+    --bg: #F5EEE0;
     --bg-card: #FFFFFF;
-    --ink: #111111;
+    --ink: #1A1A1A;
     --ink-soft: #3A3A3A;
     --ink-muted: #8A8A8A;
-    --line: #ECE6DC;
-    --accent: #E87722;
-    --accent-dark: #C45F12;
-    --red: #C8232C;
-    --green: #2E7D4F;
+    --line: #E5DCC9;
+    --accent: #8B1F23;
+    --accent-dark: #6B1419;
+    --red: #8B1F23;
+    --green: #2D4A3E;
   }
 
   html, body {
@@ -34,7 +34,7 @@
     display: flex; align-items: center; justify-content: center;
     padding: 40px 16px;
     background:
-      radial-gradient(ellipse at 20% 10%, rgba(232,119,34,0.10) 0%, transparent 50%),
+      radial-gradient(ellipse at 20% 10%, rgba(139,31,35,0.12) 0%, transparent 50%),
       radial-gradient(ellipse at 80% 90%, rgba(200,35,44,0.07) 0%, transparent 50%),
       #1A1A1A;
   }
@@ -245,7 +245,7 @@
     width: 34px; height: 34px; border-radius: 50%;
     background: var(--accent); color: white; border: none;
     display: flex; align-items: center; justify-content: center;
-    cursor: pointer; box-shadow: 0 4px 10px rgba(232,119,34,0.35);
+    cursor: pointer; box-shadow: 0 4px 10px rgba(139,31,35,0.35);
   }
   .add-btn:active { transform: scale(0.88); }
   .add-btn svg { width: 16px; height: 16px; }
@@ -283,10 +283,10 @@
   /* === Bot teaser === */
   .bot-card {
     margin: 0 20px 22px;
-    background: linear-gradient(135deg, #FFF4E8 0%, #FFE9D2 100%);
+    background: linear-gradient(135deg, #F5EEE0 0%, #EBD7D9 100%);
     border-radius: 18px; padding: 18px;
     display: flex; align-items: center; gap: 14px;
-    border: 1px solid #FAD9B5; cursor: pointer;
+    border: 1px solid #E5C0C2; cursor: pointer;
   }
   .bot-card:active { transform: scale(0.99); }
   .bot-avatar {
@@ -444,7 +444,7 @@
     font-family: inherit; font-size: 14px; font-weight: 700;
     letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer;
     display: flex; align-items: center; justify-content: center; gap: 8px;
-    box-shadow: 0 6px 16px rgba(232,119,34,0.35);
+    box-shadow: 0 6px 16px rgba(139,31,35,0.35);
   }
   .big-cta:active { transform: scale(0.98); }
   .big-cta.secondary {
@@ -463,7 +463,7 @@
   .contact-card:active { transform: scale(0.97); }
   .contact-icon {
     width: 38px; height: 38px; border-radius: 50%;
-    background: #FFF1E3; color: var(--accent);
+    background: #F2DBDC; color: var(--accent);
     display: flex; align-items: center; justify-content: center;
     margin: 0 auto 8px;
   }
@@ -563,7 +563,7 @@
     border-radius: 28px 28px 0 0; margin-top: -28px; position: relative;
   }
   .pd-tag {
-    display: inline-block; background: #FFF1E3; color: var(--accent-dark);
+    display: inline-block; background: #F2DBDC; color: var(--accent-dark);
     font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
     padding: 4px 9px; border-radius: 4px; text-transform: uppercase;
   }
@@ -617,7 +617,7 @@
     font-family: inherit; font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
     text-transform: uppercase; cursor: pointer;
     display: flex; align-items: center; justify-content: center; gap: 8px;
-    box-shadow: 0 6px 16px rgba(232,119,34,0.35);
+    box-shadow: 0 6px 16px rgba(139,31,35,0.35);
   }
   .pd-add:active { transform: scale(0.97); }
 
@@ -695,7 +695,7 @@
   }
   .promo-applied-icon {
     width: 28px; height: 28px; border-radius: 50%;
-    background: #FFF1E3; display: flex; align-items: center; justify-content: center;
+    background: #F2DBDC; display: flex; align-items: center; justify-content: center;
   }
   .summary {
     margin: 0 20px 16px; background: #fff;
@@ -718,7 +718,7 @@
     font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700;
     letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer;
     display: flex; align-items: center; justify-content: center; gap: 8px;
-    box-shadow: 0 6px 16px rgba(232,119,34,0.35);
+    box-shadow: 0 6px 16px rgba(139,31,35,0.35);
   }
   .checkout-btn:active { transform: scale(0.98); }
 
@@ -823,7 +823,7 @@
     padding: 12px; background: var(--bg);
     border: 1px solid var(--line); border-radius: 12px; cursor: pointer;
   }
-  .pay-opt.active { border-color: var(--accent); background: #FFF1E3; }
+  .pay-opt.active { border-color: var(--accent); background: #F2DBDC; }
   .pay-opt-radio {
     width: 18px; height: 18px; border-radius: 50%;
     border: 2px solid var(--ink-muted); flex-shrink: 0;
@@ -1825,7 +1825,7 @@ function renderCart() {
     </div>
     <div class="promo-applied">
       <div class="promo-applied-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#E87722" stroke-width="2" width="14" height="14"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="#8B1F23" stroke-width="2" width="14" height="14"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg>
       </div>
       <div style="flex:1;">
         <div style="font-size: 12px; font-weight: 700;">RINGSTAD20 brukt</div>
